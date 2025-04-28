@@ -1,0 +1,25 @@
+.text-input {
+    -fx-border-color: #311B92;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10;
+    -fx-padding: 10px;
+    -fx-background-color: #4FC3F7;
+    -fx-text-fill: #4A148C;
+    -fx-prompt-text-fill: #1565C0;
+}
+.text-field:focused {
+    -fx-prompt-text-fill:transparent;
+}
+.button{
+    -fx-background-color: #4FC3F7;
+    -fx-border-radius: 10;
+    -fx-padding: 10 20;
+    -fx-text-fill: #4A148C;
+    -fx-border-color: #311B92;
+    -fx-border-width: 2px;
+}
+.button:hover {
+    -fx-translate-y: -5;
+    -fx-background-color:  #01579B;
+    -fx-text-fill: #fafafa;
+}

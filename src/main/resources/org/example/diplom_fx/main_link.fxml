@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #4FC3F7;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.diplom_fx.controllers.LinksPanelController">
+   <children>
+      <Label alignment="CENTER" prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #01579B;" text="Сокращение ссылок" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Montserrat Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="full_link_textField" focusTraversable="false" layoutX="28.0" layoutY="111.0" prefHeight="41.0" prefWidth="248.0" promptText="Полная ссылка" stylesheets="@../../../styles/styles.css">
+         <font>
+            <Font name="Montserrat Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="short_link_textField" focusTraversable="false" layoutX="28.0" layoutY="180.0" prefHeight="41.0" prefWidth="248.0" promptText="Сокращенная ссылка" style="-fx-background-radius: 10;" stylesheets="@../../../styles/styles.css">
+         <font>
+            <Font name="Montserrat Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Label fx:id="messageLabel" alignment="CENTER" layoutX="29.0" layoutY="235.0" prefHeight="41.0" prefWidth="248.0" textFill="#880e4f">
+         <font>
+            <Font name="Montserrat Bold" size="13.0" />
+         </font>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </Label>
+      <Button fx:id="addLink_btn" layoutX="91.0" layoutY="293.0" mnemonicParsing="false" style="-fx-background-radius: 10;" stylesheets="@../../../styles/styles.css" text="Добавить">
+         <font>
+            <Font name="Montserrat Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ScrollPane focusTraversable="false" hbarPolicy="NEVER" layoutX="313.0" layoutY="111.0" prefHeight="289.0" prefWidth="287.0" style="-fx-background-color: #4FC3F7;">
+         <content>
+            <VBox fx:id="panelVbox" prefHeight="289.0" prefWidth="287.0" style="-fx-background-color: #4FC3F7;">
+               <padding>
+                  <Insets left="10.0" />
+               </padding></VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
